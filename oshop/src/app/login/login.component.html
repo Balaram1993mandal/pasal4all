@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+
+<!-- 
+<button (click)="login()" class="btn btn-primary">Login with Google</button> -->
+<div class="displayTable">
+    <div class="displayTableCell">
+  
+      <div class="authBlock">
+        <h3 style="text-align: center;">Sign In</h3>
+        <!-- <div class="formGroup">
+          <input type="text" class="formControl" placeholder="Username" #userName required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="password" class="formControl" placeholder="Password" #userPassword required>
+        </div> -->
+  
+        <!-- Calling SignIn Api from AuthService -->
+        <!-- <div class="formGroup">
+          <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+        </div>
+  
+        <div class="formGroup">
+          <span class="or"><span class="orInner">Or</span></span>
+        </div> -->
+  
+        <!-- Calling GoogleAuth Api from AuthService -->
+        <div class="formGroup" style="text-align: center; margin: 2rem;">
+          <!-- <button type="button" class="btn googleBtn" (click)="login()">
+            <i class="fab fa-google"></i>
+            Log in with Google
+          </button> -->
+          <button style='font-size:20px; border-radius: 5px;' (click)="login()" >Sign in Using Google</button>
+        </div>
+  
+        
+      </div>
+  
+  
+  
+    </div>
+  </div>
+  

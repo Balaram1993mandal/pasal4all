@@ -1,0 +1,22 @@
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #3a8347;
+    border-color: #3a8347;
+}
+
+
+.sticky-top{
+    top:120px;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #3a8347;
+    border-color: #3a8347;
+}
+
+.card{
+    margin-top: 1rem;
+}

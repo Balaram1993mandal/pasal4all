@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<p>
+      <a routerLink="/admin/products/new" class="btn btn-primary">New Product</a>
+</p>
+
+<!-- <input #query (keyup)="filter(query.value)" type="text" class="form-control" placeholder="Search..."> -->
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Price(₹)</th>
+            <th>Image</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let p of products$ | async">
+        <!-- <tr *ngFor="let p of filteredProducts; "> -->
+            <td>{{ p.payload.val().title }}</td>
+            <td>{{ p.payload.val().price }}</td>
+            <td><img [src]="p?.payload.val().imageUrl" style="height: 50px;"></td>
+            <td>
+                <a [routerLink]="['/admin/products/', p.key]">Edit</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
